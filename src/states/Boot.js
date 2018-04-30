@@ -12,6 +12,9 @@ import config from '../config'
 class Boot extends Phaser.State {
   // Initialize the stage and any simple settings
   init () {
+    // Scale to fill screen
+    this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
+
     // Set the background color
     this.stage.backgroundColor = '#9f9f9f'
   }
